@@ -1,0 +1,712 @@
+[::1] DEB:03/20/2014 - 08:34:37 | Starting Application
+[::1] DEB:03/20/2014 - 08:58:13 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 08:58:13 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] ERR:03/20/2014 - 08:58:13 | The specified path may not exist or may not be a directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 08:58:13 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 08:58:13 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 08:58:13 | Data1 written to cache: 532ae5e5aab49
+[::1] DEB:03/20/2014 - 08:58:13 | Data2 written to cache: 532ae5e5aab6f
+[::1] DEB:03/20/2014 - 08:58:13 | Data3 written to cache: 532ae5e5aab94
+[::1] DEB:03/20/2014 - 08:58:13 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:00:59 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:00:59 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] ERR:03/20/2014 - 09:00:59 | The specified path may not exist or may not be a directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:00:59 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:00:59 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:00:59 | Data1 written to cache: 532ae68b09ee0
+[::1] DEB:03/20/2014 - 09:00:59 | Return: 
+[::1] DEB:03/20/2014 - 09:00:59 | Data2 written to cache: 532ae68b09eeb
+[::1] DEB:03/20/2014 - 09:00:59 | Return: 
+[::1] DEB:03/20/2014 - 09:00:59 | Data3 written to cache: 532ae68b09ef3
+[::1] DEB:03/20/2014 - 09:00:59 | Return: 
+[::1] DEB:03/20/2014 - 09:00:59 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:01:09 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 09:01:09 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 09:01:09 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:01:19 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:05:46 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:05:46 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:05:46 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:05:46 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:05:46 | Data1 written to cache: 532ae7aa671e2
+[::1] DEB:03/20/2014 - 09:05:46 | Return: true
+[::1] DEB:03/20/2014 - 09:05:46 | Data2 written to cache: 532ae7aa671ee
+[::1] DEB:03/20/2014 - 09:05:46 | Return: true
+[::1] DEB:03/20/2014 - 09:05:46 | Data3 written to cache: 532ae7aa671fd
+[::1] DEB:03/20/2014 - 09:05:46 | Return: true
+[::1] DEB:03/20/2014 - 09:05:46 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:05:56 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 09:05:56 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 09:05:56 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:06:06 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:08:42 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:08:42 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:08:42 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:08:42 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:08:42 | Data1 written to cache: 532ae85ab902b
+[::1] DEB:03/20/2014 - 09:08:42 | Return: true
+[::1] DEB:03/20/2014 - 09:08:42 | Data2 written to cache: 532ae85ab903b
+[::1] DEB:03/20/2014 - 09:08:42 | Return: true
+[::1] DEB:03/20/2014 - 09:08:42 | Data3 written to cache: 532ae85ab904e
+[::1] DEB:03/20/2014 - 09:08:42 | Return: true
+[::1] DEB:03/20/2014 - 09:08:42 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:08:52 | Retreive Data 1: 532ae85ab902b
+[::1] DEB:03/20/2014 - 09:08:52 | Retreive Data 2: 532ae85ab903b
+[::1] DEB:03/20/2014 - 09:08:52 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:09:02 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:15:50 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:15:50 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:15:50 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:15:50 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:15:50 | Data1 written to cache: 532aea06c9107
+[::1] DEB:03/20/2014 - 09:15:50 | Return: true
+[::1] DEB:03/20/2014 - 09:15:50 | Data2 written to cache: 532aea06c911c
+[::1] DEB:03/20/2014 - 09:15:50 | Return: true
+[::1] DEB:03/20/2014 - 09:15:50 | Data3 written to cache: 532aea06c9128
+[::1] DEB:03/20/2014 - 09:15:50 | Return: true
+[::1] DEB:03/20/2014 - 09:15:50 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:16:00 | Retreive Data 1: 532aea06c9107
+[::1] DEB:03/20/2014 - 09:16:00 | Retreive Data 2: 532aea06c911c
+[::1] DEB:03/20/2014 - 09:16:00 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:16:10 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:16:10 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 09:16:10 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 09:16:10 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 09:16:10 | Data3 written to cache: 532aea06c9128
+[::1] DEB:03/20/2014 - 09:16:10 | Return: true
+[::1] DEB:03/20/2014 - 09:16:10 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:16:15 | Data3 written to cache: 532aea06c9128
+[::1] DEB:03/20/2014 - 09:16:15 | Return: true
+[::1] DEB:03/20/2014 - 09:16:15 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:16:20 | Data3 written to cache: 532aea06c9128
+[::1] DEB:03/20/2014 - 09:16:20 | Return: true
+[::1] DEB:03/20/2014 - 09:16:20 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:16:25 | Data3 written to cache: 532aea06c9128
+[::1] DEB:03/20/2014 - 09:16:25 | Return: true
+[::1] DEB:03/20/2014 - 09:16:25 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:16:30 | Data3 written to cache: 532aea06c9128
+[::1] DEB:03/20/2014 - 09:16:30 | Return: true
+[::1] DEB:03/20/2014 - 09:16:30 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:16:35 | Data3 written to cache: 532aea06c9128
+[::1] DEB:03/20/2014 - 09:16:35 | Return: true
+[::1] DEB:03/20/2014 - 09:16:35 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:16:40 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:27:10 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:27:10 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:27:10 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:27:10 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:27:10 | Data1 written to cache: 532aecaec9b4a
+[::1] DEB:03/20/2014 - 09:27:10 | Return: true
+[::1] DEB:03/20/2014 - 09:27:10 | Data2 written to cache: 532aecaec9b56
+[::1] DEB:03/20/2014 - 09:27:10 | Return: true
+[::1] DEB:03/20/2014 - 09:27:10 | Data3 written to cache: 532aecaec9b62
+[::1] DEB:03/20/2014 - 09:27:10 | Return: true
+[::1] DEB:03/20/2014 - 09:27:10 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:27:20 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 09:27:20 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 09:27:20 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:27:30 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:27:30 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 09:27:30 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 09:27:30 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 09:27:30 | Data3 written to cache: 532aecaec9b62
+[::1] DEB:03/20/2014 - 09:27:30 | Return: true
+[::1] DEB:03/20/2014 - 09:27:30 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:27:35 | Data3 written to cache: 532aecaec9b62
+[::1] DEB:03/20/2014 - 09:27:35 | Return: true
+[::1] DEB:03/20/2014 - 09:27:35 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:27:40 | Data3 written to cache: 532aecaec9b62
+[::1] DEB:03/20/2014 - 09:27:40 | Return: true
+[::1] DEB:03/20/2014 - 09:27:40 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:27:45 | Data3 written to cache: 532aecaec9b62
+[::1] DEB:03/20/2014 - 09:27:45 | Return: true
+[::1] DEB:03/20/2014 - 09:27:45 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:27:50 | Data3 written to cache: 532aecaec9b62
+[::1] DEB:03/20/2014 - 09:27:50 | Return: true
+[::1] DEB:03/20/2014 - 09:27:50 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:27:55 | Data3 written to cache: 532aecaec9b62
+[::1] DEB:03/20/2014 - 09:27:55 | Return: true
+[::1] DEB:03/20/2014 - 09:27:55 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:28:00 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:31:14 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:31:14 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:31:14 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:31:14 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:31:14 | Data1 written to cache: 532aeda2624a8
+[::1] DEB:03/20/2014 - 09:31:14 | Return: true
+[::1] DEB:03/20/2014 - 09:31:14 | Data2 written to cache: 532aeda2624b2
+[::1] DEB:03/20/2014 - 09:31:14 | Return: true
+[::1] DEB:03/20/2014 - 09:31:14 | Data3 written to cache: 532aeda2624ba
+[::1] DEB:03/20/2014 - 09:31:14 | Return: true
+[::1] DEB:03/20/2014 - 09:31:14 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:31:24 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 09:31:24 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 09:31:24 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:31:34 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:31:34 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 09:31:34 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 09:31:34 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 09:31:34 | Data3 written to cache: 532aeda2624ba
+[::1] DEB:03/20/2014 - 09:31:34 | Return: true
+[::1] DEB:03/20/2014 - 09:31:34 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:31:39 | Data3 written to cache: 532aeda2624ba
+[::1] DEB:03/20/2014 - 09:31:39 | Return: true
+[::1] DEB:03/20/2014 - 09:31:39 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:31:44 | Data3 written to cache: 532aeda2624ba
+[::1] DEB:03/20/2014 - 09:31:44 | Return: true
+[::1] DEB:03/20/2014 - 09:31:44 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:31:49 | Data3 written to cache: 532aeda2624ba
+[::1] DEB:03/20/2014 - 09:31:49 | Return: true
+[::1] DEB:03/20/2014 - 09:31:49 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:31:54 | Data3 written to cache: 532aeda2624ba
+[::1] DEB:03/20/2014 - 09:31:54 | Return: true
+[::1] DEB:03/20/2014 - 09:31:54 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:31:59 | Data3 written to cache: 532aeda2624ba
+[::1] DEB:03/20/2014 - 09:31:59 | Return: true
+[::1] DEB:03/20/2014 - 09:31:59 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:32:04 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:39:08 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:39:08 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:39:08 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:39:08 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:39:08 | Data1 written to cache: 532aef7c8a96d
+[::1] DEB:03/20/2014 - 09:39:08 | Return: true
+[::1] DEB:03/20/2014 - 09:39:08 | Data2 written to cache: 532aef7c8a983
+[::1] DEB:03/20/2014 - 09:39:08 | Return: true
+[::1] DEB:03/20/2014 - 09:39:08 | Data3 written to cache: 532aef7c8a995
+[::1] DEB:03/20/2014 - 09:39:08 | Return: true
+[::1] DEB:03/20/2014 - 09:39:08 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:39:18 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 09:39:18 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 09:39:18 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:39:28 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:39:28 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 09:39:28 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 09:39:28 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 09:39:28 | Data3 written to cache: 532aef7c8a995
+[::1] DEB:03/20/2014 - 09:39:28 | Return: true
+[::1] DEB:03/20/2014 - 09:39:28 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:39:33 | Data3 written to cache: 532aef7c8a995
+[::1] DEB:03/20/2014 - 09:39:33 | Return: true
+[::1] DEB:03/20/2014 - 09:39:33 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:39:38 | Data3 written to cache: 532aef7c8a995
+[::1] DEB:03/20/2014 - 09:39:38 | Return: true
+[::1] DEB:03/20/2014 - 09:39:38 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:39:43 | Data3 written to cache: 532aef7c8a995
+[::1] DEB:03/20/2014 - 09:39:43 | Return: true
+[::1] DEB:03/20/2014 - 09:39:43 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:39:48 | Data3 written to cache: 532aef7c8a995
+[::1] DEB:03/20/2014 - 09:39:48 | Return: true
+[::1] DEB:03/20/2014 - 09:39:48 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:39:53 | Data3 written to cache: 532aef7c8a995
+[::1] DEB:03/20/2014 - 09:39:53 | Return: true
+[::1] DEB:03/20/2014 - 09:39:53 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:39:58 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:39:58 | Flushing Cache
+[::1] DEB:03/20/2014 - 09:41:27 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:41:27 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:41:27 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:41:27 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:41:27 | Data1 written to cache: 532af00751320
+[::1] DEB:03/20/2014 - 09:41:27 | Return: true
+[::1] DEB:03/20/2014 - 09:41:27 | Data2 written to cache: 532af0075132c
+[::1] DEB:03/20/2014 - 09:41:27 | Return: true
+[::1] DEB:03/20/2014 - 09:41:27 | Data3 written to cache: 532af00751336
+[::1] DEB:03/20/2014 - 09:41:27 | Return: true
+[::1] DEB:03/20/2014 - 09:41:27 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:41:37 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 09:41:37 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 09:41:37 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:41:47 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:41:47 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 09:41:47 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 09:41:47 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 09:41:47 | Data3 written to cache: 532af00751336
+[::1] DEB:03/20/2014 - 09:41:47 | Return: true
+[::1] DEB:03/20/2014 - 09:41:47 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:41:52 | Data3 written to cache: 532af00751336
+[::1] DEB:03/20/2014 - 09:41:52 | Return: true
+[::1] DEB:03/20/2014 - 09:41:52 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:41:57 | Data3 written to cache: 532af00751336
+[::1] DEB:03/20/2014 - 09:41:57 | Return: true
+[::1] DEB:03/20/2014 - 09:41:57 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:42:02 | Data3 written to cache: 532af00751336
+[::1] DEB:03/20/2014 - 09:42:02 | Return: true
+[::1] DEB:03/20/2014 - 09:42:02 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:42:07 | Data3 written to cache: 532af00751336
+[::1] DEB:03/20/2014 - 09:42:07 | Return: true
+[::1] DEB:03/20/2014 - 09:42:07 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:42:12 | Data3 written to cache: 532af00751336
+[::1] DEB:03/20/2014 - 09:42:12 | Return: true
+[::1] DEB:03/20/2014 - 09:42:12 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 09:42:17 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 09:42:17 | Flushing Cache
+[::1] DEB:03/20/2014 - 09:43:34 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:43:34 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:43:34 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:43:34 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:43:34 | Data1 written to cache: 532af0864f221
+[::1] DEB:03/20/2014 - 09:43:34 | Return: true
+[::1] DEB:03/20/2014 - 09:43:34 | Data2 written to cache: 532af0864f245
+[::1] DEB:03/20/2014 - 09:43:34 | Return: true
+[::1] DEB:03/20/2014 - 09:43:34 | Data3 written to cache: 532af0864f25a
+[::1] DEB:03/20/2014 - 09:43:34 | Return: true
+[::1] DEB:03/20/2014 - 09:44:15 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 09:44:15 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 09:44:15 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 09:44:15 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 09:44:15 | Data1 written to cache: 532af0af883ae
+[::1] DEB:03/20/2014 - 09:44:15 | Return: true
+[::1] DEB:03/20/2014 - 09:44:15 | Data2 written to cache: 532af0af883c4
+[::1] DEB:03/20/2014 - 09:44:15 | Return: true
+[::1] DEB:03/20/2014 - 09:44:15 | Data3 written to cache: 532af0af883d0
+[::1] DEB:03/20/2014 - 09:44:15 | Return: true
+[::1] DEB:03/20/2014 - 09:44:15 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 09:44:25 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 09:44:25 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 10:01:15 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 10:01:15 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 10:01:15 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 10:01:15 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 10:01:15 | Data1 written to cache: 532af4ab22af5
+[::1] DEB:03/20/2014 - 10:01:15 | Return: true
+[::1] DEB:03/20/2014 - 10:01:15 | Data2 written to cache: 532af4ab22b06
+[::1] DEB:03/20/2014 - 10:01:15 | Return: true
+[::1] DEB:03/20/2014 - 10:01:15 | Data3 written to cache: 532af4ab22b0e
+[::1] DEB:03/20/2014 - 10:01:15 | Return: true
+[::1] DEB:03/20/2014 - 10:01:15 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 10:01:25 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 10:01:25 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 10:01:25 | Mod Time: 1395324075 ()
+[::1] DEB:03/20/2014 - 10:01:25 | Current Time: 1395324085 ()
+[::1] DEB:03/20/2014 - 10:01:25 | Time to check: 1395324070 ()
+[::1] DEB:03/20/2014 - 10:01:25 | The item has expired
+[::1] DEB:03/20/2014 - 10:01:25 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 10:01:25 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 10:01:25 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 10:01:25 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 10:01:25 | Mod Time: 1395324075 ()
+[::1] DEB:03/20/2014 - 10:01:25 | Current Time: 1395324085 ()
+[::1] DEB:03/20/2014 - 10:01:25 | Time to check: 1395324070 ()
+[::1] DEB:03/20/2014 - 10:01:25 | The item has expired
+[::1] DEB:03/20/2014 - 10:01:25 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 10:01:25 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 11:08:36 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 11:08:36 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 11:08:36 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 11:08:36 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 11:08:36 | Data1 written to cache: 532b047435300
+[::1] DEB:03/20/2014 - 11:08:36 | Return: true
+[::1] DEB:03/20/2014 - 11:08:36 | Data2 written to cache: 532b047435314
+[::1] DEB:03/20/2014 - 11:08:36 | Return: true
+[::1] DEB:03/20/2014 - 11:08:36 | Data3 written to cache: 532b047435323
+[::1] DEB:03/20/2014 - 11:08:36 | Return: true
+[::1] DEB:03/20/2014 - 11:08:36 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:08:46 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:08:46 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 11:08:46 | Mod Time: 1395328116 (2014-03-20 11:08:36)
+[::1] DEB:03/20/2014 - 11:08:46 | Current Time: 1395328126 (2014-03-20 11:08:46)
+[::1] DEB:03/20/2014 - 11:08:46 | Time to check: 1395328111 (2014-03-20 11:08:31)
+[::1] DEB:03/20/2014 - 11:08:46 | The item has expired
+[::1] DEB:03/20/2014 - 11:08:46 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 11:08:46 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 11:08:46 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:08:46 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 11:08:46 | Mod Time: 1395328116 (2014-03-20 11:08:36)
+[::1] DEB:03/20/2014 - 11:08:46 | Current Time: 1395328126 (2014-03-20 11:08:46)
+[::1] DEB:03/20/2014 - 11:08:46 | Time to check: 1395328111 (2014-03-20 11:08:31)
+[::1] DEB:03/20/2014 - 11:08:46 | The item has expired
+[::1] DEB:03/20/2014 - 11:08:46 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 11:08:46 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 11:36:22 | Starting test-cache.php
+[::1] DEB:03/20/2014 - 11:36:22 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 11:36:22 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 11:36:22 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 11:36:22 | Data1 written to cache: 532b0af6284b5
+[::1] DEB:03/20/2014 - 11:36:22 | Return: true
+[::1] DEB:03/20/2014 - 11:36:22 | Data2 written to cache: 532b0af6284c9
+[::1] DEB:03/20/2014 - 11:36:22 | Return: true
+[::1] DEB:03/20/2014 - 11:36:22 | Data3 written to cache: 532b0af6284db
+[::1] DEB:03/20/2014 - 11:36:22 | Return: true
+[::1] DEB:03/20/2014 - 11:36:22 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:36:32 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:36:32 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 11:36:32 | Mod Time: 1395329782 (2014-03-20 11:36:22)
+[::1] DEB:03/20/2014 - 11:36:32 | Current Time: 1395329792 (2014-03-20 11:36:32)
+[::1] DEB:03/20/2014 - 11:36:32 | Expiration Time: 1395329777 (2014-03-20 11:36:17)
+[::1] DEB:03/20/2014 - 11:36:32 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 11:36:32 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:36:32 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 11:36:32 | Mod Time: 1395329782 (2014-03-20 11:36:22)
+[::1] DEB:03/20/2014 - 11:36:32 | Current Time: 1395329792 (2014-03-20 11:36:32)
+[::1] DEB:03/20/2014 - 11:36:32 | Expiration Time: 1395329777 (2014-03-20 11:36:17)
+[::1] DEB:03/20/2014 - 11:36:32 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 11:37:52 | ********************
+* Starting test-cache.php
+********************
+
+[::1] DEB:03/20/2014 - 11:37:52 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 11:37:52 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 11:37:52 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 11:37:52 | Data1 written to cache: 532b0b5048445
+[::1] DEB:03/20/2014 - 11:37:52 | Return: true
+[::1] DEB:03/20/2014 - 11:37:52 | Data2 written to cache: 532b0b5048450
+[::1] DEB:03/20/2014 - 11:37:52 | Return: true
+[::1] DEB:03/20/2014 - 11:37:52 | Data3 written to cache: 532b0b5048458
+[::1] DEB:03/20/2014 - 11:37:52 | Return: true
+[::1] DEB:03/20/2014 - 11:37:52 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:38:02 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:38:02 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 11:38:02 | Mod Time: 1395329872 (2014-03-20 11:37:52)
+[::1] DEB:03/20/2014 - 11:38:02 | Current Time: 1395329882 (2014-03-20 11:38:02)
+[::1] DEB:03/20/2014 - 11:38:02 | Expiration Time: 1395329867 (2014-03-20 11:37:47)
+[::1] DEB:03/20/2014 - 11:38:02 | Retreive Data 1: 
+[::1] DEB:03/20/2014 - 11:38:02 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:38:02 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 11:38:02 | Mod Time: 1395329872 (2014-03-20 11:37:52)
+[::1] DEB:03/20/2014 - 11:38:02 | Current Time: 1395329882 (2014-03-20 11:38:02)
+[::1] DEB:03/20/2014 - 11:38:02 | Expiration Time: 1395329867 (2014-03-20 11:37:47)
+[::1] DEB:03/20/2014 - 11:38:02 | Retreive Data 2: 
+[::1] DEB:03/20/2014 - 11:38:02 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:38:12 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:38:12 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:38:12 | Mod Time: 1395329872 (2014-03-20 11:37:52)
+[::1] DEB:03/20/2014 - 11:38:12 | Current Time: 1395329892 (2014-03-20 11:38:12)
+[::1] DEB:03/20/2014 - 11:38:12 | Expiration Time: 1395329877 (2014-03-20 11:37:57)
+[::1] DEB:03/20/2014 - 11:38:12 | The item has expired
+[::1] DEB:03/20/2014 - 11:38:12 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:38:12 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 11:38:12 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 11:38:12 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 11:38:12 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 11:38:12 | Data3 written to cache: 532b0b5048458
+[::1] DEB:03/20/2014 - 11:38:12 | Return: true
+[::1] DEB:03/20/2014 - 11:38:12 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:38:17 | Data3 written to cache: 532b0b5048458
+[::1] DEB:03/20/2014 - 11:38:17 | Return: true
+[::1] DEB:03/20/2014 - 11:38:17 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:38:22 | Data3 written to cache: 532b0b5048458
+[::1] DEB:03/20/2014 - 11:38:22 | Return: true
+[::1] DEB:03/20/2014 - 11:38:22 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:38:27 | Data3 written to cache: 532b0b5048458
+[::1] DEB:03/20/2014 - 11:38:27 | Return: true
+[::1] DEB:03/20/2014 - 11:38:27 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:38:32 | Data3 written to cache: 532b0b5048458
+[::1] DEB:03/20/2014 - 11:38:32 | Return: true
+[::1] DEB:03/20/2014 - 11:38:32 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:38:37 | Data3 written to cache: 532b0b5048458
+[::1] DEB:03/20/2014 - 11:38:37 | Return: true
+[::1] DEB:03/20/2014 - 11:38:37 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:38:42 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:38:42 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:38:42 | Mod Time: 1395329917 (2014-03-20 11:38:37)
+[::1] DEB:03/20/2014 - 11:38:42 | Current Time: 1395329922 (2014-03-20 11:38:42)
+[::1] DEB:03/20/2014 - 11:38:42 | Expiration Time: 1395329912 (2014-03-20 11:38:32)
+[::1] DEB:03/20/2014 - 11:38:42 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 11:38:42 | Flushing Cache
+[::1] DEB:03/20/2014 - 11:40:48 | ******************** Starting test-cache.php ********************
+[::1] DEB:03/20/2014 - 11:40:48 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 11:40:48 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 11:40:48 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 11:40:48 | Data1 written to cache: 532b0c004691c
+[::1] DEB:03/20/2014 - 11:40:48 | Return: true
+[::1] DEB:03/20/2014 - 11:40:48 | Data2 written to cache: 532b0c0046941
+[::1] DEB:03/20/2014 - 11:40:48 | Return: true
+[::1] DEB:03/20/2014 - 11:40:48 | Data3 written to cache: 532b0c004694c
+[::1] DEB:03/20/2014 - 11:40:48 | Return: true
+[::1] DEB:03/20/2014 - 11:40:48 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:40:58 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:40:58 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 11:40:58 | Mod Time: 1395330048 (2014-03-20 11:40:48)
+[::1] DEB:03/20/2014 - 11:40:58 | Current Time: 1395330058 (2014-03-20 11:40:58)
+[::1] DEB:03/20/2014 - 11:40:58 | Expiration Time: 1395330043 (2014-03-20 11:40:43)
+[::1] DEB:03/20/2014 - 11:40:58 | Retreive Data 1: false
+[::1] DEB:03/20/2014 - 11:40:58 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:40:58 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 11:40:58 | Mod Time: 1395330048 (2014-03-20 11:40:48)
+[::1] DEB:03/20/2014 - 11:40:58 | Current Time: 1395330058 (2014-03-20 11:40:58)
+[::1] DEB:03/20/2014 - 11:40:58 | Expiration Time: 1395330043 (2014-03-20 11:40:43)
+[::1] DEB:03/20/2014 - 11:40:58 | Retreive Data 2: false
+[::1] DEB:03/20/2014 - 11:40:58 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:41:08 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:41:08 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:41:08 | Mod Time: 1395330048 (2014-03-20 11:40:48)
+[::1] DEB:03/20/2014 - 11:41:08 | Current Time: 1395330068 (2014-03-20 11:41:08)
+[::1] DEB:03/20/2014 - 11:41:08 | Expiration Time: 1395330053 (2014-03-20 11:40:53)
+[::1] DEB:03/20/2014 - 11:41:08 | The item has expired
+[::1] DEB:03/20/2014 - 11:41:08 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:41:08 | Retreive Data 3: false
+[::1] DEB:03/20/2014 - 11:41:08 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 11:41:08 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 11:41:08 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 11:41:08 | Data3 written to cache: 532b0c004694c
+[::1] DEB:03/20/2014 - 11:41:08 | Return: true
+[::1] DEB:03/20/2014 - 11:41:08 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:41:13 | Data3 written to cache: 532b0c004694c
+[::1] DEB:03/20/2014 - 11:41:13 | Return: true
+[::1] DEB:03/20/2014 - 11:41:13 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:41:18 | Data3 written to cache: 532b0c004694c
+[::1] DEB:03/20/2014 - 11:41:18 | Return: true
+[::1] DEB:03/20/2014 - 11:41:18 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:41:23 | Data3 written to cache: 532b0c004694c
+[::1] DEB:03/20/2014 - 11:41:23 | Return: true
+[::1] DEB:03/20/2014 - 11:41:23 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:41:28 | Data3 written to cache: 532b0c004694c
+[::1] DEB:03/20/2014 - 11:41:28 | Return: true
+[::1] DEB:03/20/2014 - 11:41:28 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:41:33 | Data3 written to cache: 532b0c004694c
+[::1] DEB:03/20/2014 - 11:41:33 | Return: true
+[::1] DEB:03/20/2014 - 11:41:33 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:41:38 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:41:38 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:41:38 | Mod Time: 1395330093 (2014-03-20 11:41:33)
+[::1] DEB:03/20/2014 - 11:41:38 | Current Time: 1395330098 (2014-03-20 11:41:38)
+[::1] DEB:03/20/2014 - 11:41:38 | Expiration Time: 1395330088 (2014-03-20 11:41:28)
+[::1] DEB:03/20/2014 - 11:41:38 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 11:41:38 | Flushing Cache
+[::1] DEB:03/20/2014 - 11:46:11 | ******************** Starting test-cache.php ********************
+[::1] DEB:03/20/2014 - 11:46:11 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 11:46:11 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 11:46:11 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 11:46:11 | Data1 written to cache: 532b0d430fc47
+[::1] DEB:03/20/2014 - 11:46:11 | Return: true
+[::1] DEB:03/20/2014 - 11:46:11 | Data2 written to cache: 532b0d430fc5a
+[::1] DEB:03/20/2014 - 11:46:11 | Return: true
+[::1] DEB:03/20/2014 - 11:46:11 | Data3 written to cache: 532b0d430fc72
+[::1] DEB:03/20/2014 - 11:46:11 | Return: true
+[::1] DEB:03/20/2014 - 11:46:11 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:46:21 | FileCache::readDataFromCache(Data1)
+[::1] DEB:03/20/2014 - 11:46:21 | bExists: true
+[::1] DEB:03/20/2014 - 11:46:21 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:46:21 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 11:46:21 | Mod Time: 1395330371 (2014-03-20 11:46:11)
+[::1] DEB:03/20/2014 - 11:46:21 | Current Time: 1395330381 (2014-03-20 11:46:21)
+[::1] DEB:03/20/2014 - 11:46:21 | Expiration Time: 1395330366 (2014-03-20 11:46:06)
+[::1] DEB:03/20/2014 - 11:46:21 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:46:21 | Retreive Data 1: false
+[::1] DEB:03/20/2014 - 11:46:21 | FileCache::readDataFromCache(Data2)
+[::1] DEB:03/20/2014 - 11:46:21 | bExists: true
+[::1] DEB:03/20/2014 - 11:46:21 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:46:21 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 11:46:21 | Mod Time: 1395330371 (2014-03-20 11:46:11)
+[::1] DEB:03/20/2014 - 11:46:21 | Current Time: 1395330381 (2014-03-20 11:46:21)
+[::1] DEB:03/20/2014 - 11:46:21 | Expiration Time: 1395330366 (2014-03-20 11:46:06)
+[::1] DEB:03/20/2014 - 11:46:21 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:46:21 | Retreive Data 2: false
+[::1] DEB:03/20/2014 - 11:46:21 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:46:31 | FileCache::readDataFromCache(Data3)
+[::1] DEB:03/20/2014 - 11:46:31 | bExists: true
+[::1] DEB:03/20/2014 - 11:46:31 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:46:31 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:46:31 | Mod Time: 1395330371 (2014-03-20 11:46:11)
+[::1] DEB:03/20/2014 - 11:46:31 | Current Time: 1395330391 (2014-03-20 11:46:31)
+[::1] DEB:03/20/2014 - 11:46:31 | Expiration Time: 1395330376 (2014-03-20 11:46:16)
+[::1] DEB:03/20/2014 - 11:46:31 | The item has expired
+[::1] DEB:03/20/2014 - 11:46:31 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:46:31 | bIsValid: false
+[::1] DEB:03/20/2014 - 11:46:31 | Retreive Data 3: false
+[::1] DEB:03/20/2014 - 11:46:31 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 11:46:31 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 11:46:31 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 11:46:31 | Data3 written to cache: 532b0d430fc72
+[::1] DEB:03/20/2014 - 11:46:31 | Return: true
+[::1] DEB:03/20/2014 - 11:46:31 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:46:36 | Data3 written to cache: 532b0d430fc72
+[::1] DEB:03/20/2014 - 11:46:36 | Return: true
+[::1] DEB:03/20/2014 - 11:46:36 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:46:41 | Data3 written to cache: 532b0d430fc72
+[::1] DEB:03/20/2014 - 11:46:41 | Return: true
+[::1] DEB:03/20/2014 - 11:46:41 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:46:46 | Data3 written to cache: 532b0d430fc72
+[::1] DEB:03/20/2014 - 11:46:46 | Return: true
+[::1] DEB:03/20/2014 - 11:46:46 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:46:51 | Data3 written to cache: 532b0d430fc72
+[::1] DEB:03/20/2014 - 11:46:51 | Return: true
+[::1] DEB:03/20/2014 - 11:46:51 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:46:56 | Data3 written to cache: 532b0d430fc72
+[::1] DEB:03/20/2014 - 11:46:56 | Return: true
+[::1] DEB:03/20/2014 - 11:46:56 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:47:01 | FileCache::readDataFromCache(Data3)
+[::1] DEB:03/20/2014 - 11:47:01 | bExists: true
+[::1] DEB:03/20/2014 - 11:47:01 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:47:01 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:47:01 | Mod Time: 1395330416 (2014-03-20 11:46:56)
+[::1] DEB:03/20/2014 - 11:47:01 | Current Time: 1395330421 (2014-03-20 11:47:01)
+[::1] DEB:03/20/2014 - 11:47:01 | Expiration Time: 1395330411 (2014-03-20 11:46:51)
+[::1] DEB:03/20/2014 - 11:47:01 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:47:01 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 11:47:01 | Flushing Cache
+[::1] DEB:03/20/2014 - 11:48:55 | ******************** Starting test-cache.php ********************
+[::1] DEB:03/20/2014 - 11:48:55 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 11:48:55 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 11:48:55 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 11:48:55 | Data1 written to cache: 532b0de70c475
+[::1] DEB:03/20/2014 - 11:48:55 | Return: true
+[::1] DEB:03/20/2014 - 11:48:55 | Data2 written to cache: 532b0de70c480
+[::1] DEB:03/20/2014 - 11:48:55 | Return: true
+[::1] DEB:03/20/2014 - 11:48:55 | Data3 written to cache: 532b0de70c494
+[::1] DEB:03/20/2014 - 11:48:55 | Return: true
+[::1] DEB:03/20/2014 - 11:48:55 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:49:05 | FileCache::readDataFromCache(Data1)
+[::1] DEB:03/20/2014 - 11:49:05 | bExists: true
+[::1] DEB:03/20/2014 - 11:49:05 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:49:05 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 11:49:05 | Mod Time: 1395330535 (2014-03-20 11:48:55)
+[::1] DEB:03/20/2014 - 11:49:05 | Current Time: 1395330545 (2014-03-20 11:49:05)
+[::1] DEB:03/20/2014 - 11:49:05 | Expiration Time: 1395330530 (2014-03-20 11:48:50)
+[::1] DEB:03/20/2014 - 11:49:05 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:49:05 | Retreive Data 1: '532b0de70c475'
+[::1] DEB:03/20/2014 - 11:49:05 | FileCache::readDataFromCache(Data2)
+[::1] DEB:03/20/2014 - 11:49:05 | bExists: true
+[::1] DEB:03/20/2014 - 11:49:05 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:49:05 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 11:49:05 | Mod Time: 1395330535 (2014-03-20 11:48:55)
+[::1] DEB:03/20/2014 - 11:49:05 | Current Time: 1395330545 (2014-03-20 11:49:05)
+[::1] DEB:03/20/2014 - 11:49:05 | Expiration Time: 1395330530 (2014-03-20 11:48:50)
+[::1] DEB:03/20/2014 - 11:49:05 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:49:05 | Retreive Data 2: '532b0de70c480'
+[::1] DEB:03/20/2014 - 11:49:05 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:49:15 | FileCache::readDataFromCache(Data3)
+[::1] DEB:03/20/2014 - 11:49:15 | bExists: true
+[::1] DEB:03/20/2014 - 11:49:15 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:49:15 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:49:15 | Mod Time: 1395330535 (2014-03-20 11:48:55)
+[::1] DEB:03/20/2014 - 11:49:15 | Current Time: 1395330555 (2014-03-20 11:49:15)
+[::1] DEB:03/20/2014 - 11:49:15 | Expiration Time: 1395330540 (2014-03-20 11:49:00)
+[::1] DEB:03/20/2014 - 11:49:15 | The item has expired
+[::1] DEB:03/20/2014 - 11:49:15 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:49:15 | bIsValid: false
+[::1] DEB:03/20/2014 - 11:49:15 | Retreive Data 3: false
+[::1] DEB:03/20/2014 - 11:49:15 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 11:49:15 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 11:49:15 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 11:49:15 | Data3 written to cache: 532b0de70c494
+[::1] DEB:03/20/2014 - 11:49:15 | Return: true
+[::1] DEB:03/20/2014 - 11:49:15 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:49:20 | Data3 written to cache: 532b0de70c494
+[::1] DEB:03/20/2014 - 11:49:20 | Return: true
+[::1] DEB:03/20/2014 - 11:49:20 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:49:25 | Data3 written to cache: 532b0de70c494
+[::1] DEB:03/20/2014 - 11:49:25 | Return: true
+[::1] DEB:03/20/2014 - 11:49:25 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:49:30 | Data3 written to cache: 532b0de70c494
+[::1] DEB:03/20/2014 - 11:49:30 | Return: true
+[::1] DEB:03/20/2014 - 11:49:30 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:49:35 | Data3 written to cache: 532b0de70c494
+[::1] DEB:03/20/2014 - 11:49:35 | Return: true
+[::1] DEB:03/20/2014 - 11:49:35 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:49:40 | Data3 written to cache: 532b0de70c494
+[::1] DEB:03/20/2014 - 11:49:40 | Return: true
+[::1] DEB:03/20/2014 - 11:49:40 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:49:45 | FileCache::readDataFromCache(Data3)
+[::1] DEB:03/20/2014 - 11:49:45 | bExists: true
+[::1] DEB:03/20/2014 - 11:49:45 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:49:45 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:49:45 | Mod Time: 1395330580 (2014-03-20 11:49:40)
+[::1] DEB:03/20/2014 - 11:49:45 | Current Time: 1395330585 (2014-03-20 11:49:45)
+[::1] DEB:03/20/2014 - 11:49:45 | Expiration Time: 1395330575 (2014-03-20 11:49:35)
+[::1] DEB:03/20/2014 - 11:49:45 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:49:45 | Retreive Data 3: 532b0de70c494
+[::1] DEB:03/20/2014 - 11:49:45 | Flushing Cache
+[::1] DEB:03/20/2014 - 11:57:06 | ******************** Starting test-cache.php ********************
+[::1] DEB:03/20/2014 - 11:57:06 | Set the cache directory: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache
+[::1] DEB:03/20/2014 - 11:57:06 | Set the expiration to (seconds): 15
+[::1] DEB:03/20/2014 - 11:57:06 | Create 3 cache entries
+[::1] DEB:03/20/2014 - 11:57:06 | Data1 written to cache: 532b0fd2bbbc0
+[::1] DEB:03/20/2014 - 11:57:06 | Return: true
+[::1] DEB:03/20/2014 - 11:57:06 | Data2 written to cache: 532b0fd2bbbd0
+[::1] DEB:03/20/2014 - 11:57:06 | Return: true
+[::1] DEB:03/20/2014 - 11:57:06 | Data3 written to cache: 532b0fd2bbbda
+[::1] DEB:03/20/2014 - 11:57:06 | Return: true
+[::1] DEB:03/20/2014 - 11:57:06 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:57:16 | FileCache::readDataFromCache(Data1)
+[::1] DEB:03/20/2014 - 11:57:16 | bExists: true
+[::1] DEB:03/20/2014 - 11:57:16 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:57:16 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data1
+[::1] DEB:03/20/2014 - 11:57:16 | Mod Time: 1395331026 (2014-03-20 11:57:06)
+[::1] DEB:03/20/2014 - 11:57:16 | Current Time: 1395331036 (2014-03-20 11:57:16)
+[::1] DEB:03/20/2014 - 11:57:16 | Expiration Time: 1395331021 (2014-03-20 11:57:01)
+[::1] DEB:03/20/2014 - 11:57:16 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:57:16 | Retreive Data 1: '532b0fd2bbbc0'
+[::1] DEB:03/20/2014 - 11:57:16 | FileCache::readDataFromCache(Data2)
+[::1] DEB:03/20/2014 - 11:57:16 | bExists: true
+[::1] DEB:03/20/2014 - 11:57:16 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:57:16 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data2
+[::1] DEB:03/20/2014 - 11:57:16 | Mod Time: 1395331026 (2014-03-20 11:57:06)
+[::1] DEB:03/20/2014 - 11:57:16 | Current Time: 1395331036 (2014-03-20 11:57:16)
+[::1] DEB:03/20/2014 - 11:57:16 | Expiration Time: 1395331021 (2014-03-20 11:57:01)
+[::1] DEB:03/20/2014 - 11:57:16 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:57:16 | Retreive Data 2: '532b0fd2bbbd0'
+[::1] DEB:03/20/2014 - 11:57:16 | Sleep for 10 seconds
+[::1] DEB:03/20/2014 - 11:57:26 | FileCache::readDataFromCache(Data3)
+[::1] DEB:03/20/2014 - 11:57:26 | bExists: true
+[::1] DEB:03/20/2014 - 11:57:26 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:57:26 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:57:26 | Mod Time: 1395331026 (2014-03-20 11:57:06)
+[::1] DEB:03/20/2014 - 11:57:26 | Current Time: 1395331046 (2014-03-20 11:57:26)
+[::1] DEB:03/20/2014 - 11:57:26 | Expiration Time: 1395331031 (2014-03-20 11:57:11)
+[::1] DEB:03/20/2014 - 11:57:26 | The item has expired
+[::1] DEB:03/20/2014 - 11:57:26 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:57:26 | bIsValid: false
+[::1] DEB:03/20/2014 - 11:57:26 | Retreive Data 3: false
+[::1] DEB:03/20/2014 - 11:57:26 | Now we want to test to make sure we can kepp a cache entry updated.
+[::1] DEB:03/20/2014 - 11:57:26 | Set the expiration to (seconds): 10
+[::1] DEB:03/20/2014 - 11:57:26 | Write the cache entry every 5 seconds to keep it updated.  then after 30 seconds see if its still available.
+[::1] DEB:03/20/2014 - 11:57:26 | Data3 written to cache: 532b0fd2bbbda
+[::1] DEB:03/20/2014 - 11:57:26 | Return: true
+[::1] DEB:03/20/2014 - 11:57:26 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:57:31 | Data3 written to cache: 532b0fd2bbbda
+[::1] DEB:03/20/2014 - 11:57:31 | Return: true
+[::1] DEB:03/20/2014 - 11:57:31 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:57:36 | Data3 written to cache: 532b0fd2bbbda
+[::1] DEB:03/20/2014 - 11:57:36 | Return: true
+[::1] DEB:03/20/2014 - 11:57:36 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:57:41 | Data3 written to cache: 532b0fd2bbbda
+[::1] DEB:03/20/2014 - 11:57:41 | Return: true
+[::1] DEB:03/20/2014 - 11:57:41 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:57:46 | Data3 written to cache: 532b0fd2bbbda
+[::1] DEB:03/20/2014 - 11:57:46 | Return: true
+[::1] DEB:03/20/2014 - 11:57:46 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:57:51 | Data3 written to cache: 532b0fd2bbbda
+[::1] DEB:03/20/2014 - 11:57:51 | Return: true
+[::1] DEB:03/20/2014 - 11:57:51 | Sleep for 5 seconds
+[::1] DEB:03/20/2014 - 11:57:56 | FileCache::readDataFromCache(Data3)
+[::1] DEB:03/20/2014 - 11:57:56 | bExists: true
+[::1] DEB:03/20/2014 - 11:57:56 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:57:56 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:57:56 | Mod Time: 1395331071 (2014-03-20 11:57:51)
+[::1] DEB:03/20/2014 - 11:57:56 | Current Time: 1395331076 (2014-03-20 11:57:56)
+[::1] DEB:03/20/2014 - 11:57:56 | Expiration Time: 1395331066 (2014-03-20 11:57:46)
+[::1] DEB:03/20/2014 - 11:57:56 | bIsValid: true
+[::1] DEB:03/20/2014 - 11:57:56 | Retreive Data 3: 532b0fd2bbbda
+[::1] DEB:03/20/2014 - 11:57:56 | Now lets wait 20 seconds and try and access it again.
+[::1] DEB:03/20/2014 - 11:58:16 | FileCache::readDataFromCache(Data3)
+[::1] DEB:03/20/2014 - 11:58:16 | bExists: true
+[::1] DEB:03/20/2014 - 11:58:16 | FileCache::hasExpired
+[::1] DEB:03/20/2014 - 11:58:16 | Cache File: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:58:16 | Mod Time: 1395331071 (2014-03-20 11:57:51)
+[::1] DEB:03/20/2014 - 11:58:16 | Current Time: 1395331096 (2014-03-20 11:58:16)
+[::1] DEB:03/20/2014 - 11:58:16 | Expiration Time: 1395331086 (2014-03-20 11:58:06)
+[::1] DEB:03/20/2014 - 11:58:16 | The item has expired
+[::1] DEB:03/20/2014 - 11:58:16 | deleting cache file: /Library/WebServer/Documents/UM-Web-Workspace/HealthLibrary/cache/Data3
+[::1] DEB:03/20/2014 - 11:58:16 | bIsValid: false
+[::1] DEB:03/20/2014 - 11:58:16 | Retreive Data 3: 
+[::1] DEB:03/20/2014 - 11:58:16 | Flushing Cache
+[::1] DEB:03/20/2014 - 14:23:55 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:24:18 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:24:49 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:25:27 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:25:41 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:28:10 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:29:20 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:29:20 | Request Url: http://external.ws.staywell.com//umiamikbws/Content.svc/GetContent?xmlRequest=<ContentTypeId="90" ContentId="P02730" />
+[::1] DEB:03/20/2014 - 14:45:52 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:45:52 | Request Url: http://external.ws.staywell.com/umiamikbws/Content.svc/GetContent?xmlRequest=<ContentTypeId="90" ContentId="P02730" />
+[::1] DEB:03/20/2014 - 14:48:39 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:49:00 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:49:03 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:49:09 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:49:11 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:49:13 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:49:32 | ******************** Starting test-health-library-request.php ********************
+[::1] DEB:03/20/2014 - 14:49:32 | Request Url: http://external.ws.staywell.com/umiamikbws/Content.svc/GetContent?xmlRequest=<GetContent ContentTypeId="90" ContentId="P02730" />
