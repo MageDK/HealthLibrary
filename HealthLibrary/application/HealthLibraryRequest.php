@@ -93,11 +93,13 @@ class HealthLibraryRequest
 	 * @param string sServiceName The name of the Web Service class being accessed.  Should be "Content.svc" for most functions. 
 	 * @param string sHttpMethod Specify if we use HTTP GET or POST to make the request.  Default to POST.
 	 */
-	public function __construct( $sBaseUrl = "http://external.ws.staywell.com/", 
+	function __construct( $sBaseUrl = "http://external.ws.staywell.com/", 
 								 $sSiteName = "umiamikbws", 
 								 $sServiceName = "Content.svc",
 								 $sHttpMethod = "POST" )
 	{
+		log_debug("HealthLibraryRequest::__construct()");
+		
 		//* Initialize out member variables
 		$this->m_sBaseUrl 				= $sBaseUrl;
 		$this->m_sSiteName				= $sSiteName;
@@ -105,6 +107,11 @@ class HealthLibraryRequest
 		$this->m_sHttpMethod			= $sHttpMethod;
 		
 		$this->m_sParamArray			= array();
+		
+		log_debug("BaseURL = " . $this->m_sBaseUrl);
+		log_debug("SiteName = " . $this->m_sSiteName);
+		log_debug("ServiceName = " . $this->m_sServiceName);
+		log_debug("HTTPMethod = " . $this->m_sHttpMethod);
 	}
 	
 	/**
@@ -161,6 +168,8 @@ class HealthLibraryRequest
 	 */
 	private function submitHttpRequest()
 	{
+		log_debug("HealthLibraryRequest::submitHttpRequest()");
+		
 		$sResponse = "";
 		
 		//* Collect and format the parameters for the request
@@ -171,8 +180,9 @@ class HealthLibraryRequest
 		
 		//* add the xmlRequest parameter
 		$sParamString = "xmlRequest=" . urlencode($sParamneters);
-		writelineBR("ParamString: $sParamString");
+		log_debug("Param String: $sParamString");
 		
+		log_debug("HTTP Request Method: " . $this->m_sHttpMethod);
 		if ($this->m_sHttpMethod == "POST")
 		{
 			//* set the options needed for the POST request
@@ -195,8 +205,11 @@ class HealthLibraryRequest
 		$sResponse = curl_exec($xCurl);
 		
 		//* Get some information 
-		$m_iHttpResponseCode		= intval(curl_getInfo($xCurl, CURLINFO_HTTP_CODE));
-		$m_iTotalBytesDownloaded	= intval(curl_getInfo($xCurl, CURLINFO_SIZE_DOWNLOAD));
+		$this->m_iHttpResponseCode		= intval(curl_getInfo($xCurl, CURLINFO_HTTP_CODE));
+		$this->m_iTotalBytesDownloaded	= intval(curl_getInfo($xCurl, CURLINFO_SIZE_DOWNLOAD));
+		
+		log_debug("HTTP Response Code: " . $this->m_iHttpResponseCode);
+		log_debug("Total Bytes Downloaded: " . $this->m_iTotalBytesDownloaded);
 		
 		//* Lets see if there was an error
 		$iErrorNo = curl_error($xCurl);
@@ -207,6 +220,9 @@ class HealthLibraryRequest
 			
 			return null;
 		}
+		
+		log_debug( "Response" );
+		log_debug($sResponse);
 		
 		return $sResponse;
 	}
@@ -288,7 +304,7 @@ class HealthLibraryRequest
 			$sTmpParameters .= "/>";
 		}
 		
-		writelineBR("Parameters: " . $sTmpParameters);
+		log_debug("Parameters: " . $sTmpParameters);
 			
 		//* return the string of params
 		return $sTmpParameters;
@@ -310,8 +326,8 @@ class HealthLibraryRequest
 		//* Create the request
 		$this->m_sRequestUrl = $this->createRequestUrl($sFunctionName);
 		
-		writelineBR("Functin Name: " . $this->m_sFunctionName);
-		writelineBR("RequestURL: " . htmlentities($this->m_sRequestUrl));
+		log_debug("Functin Name: " . $this->m_sFunctionName);
+		log_debug("RequestURL: " . htmlentities($this->m_sRequestUrl));
 		
 		//* now that we have our Requesr URL.  We can submit the request and get te response.
 		$this->m_sResponse = $this->submitHttpRequest();

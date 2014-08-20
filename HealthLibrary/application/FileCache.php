@@ -37,9 +37,10 @@ class FileCache
 	 * Create an instance of the FileCache object.
 	 * 
 	 */
-	public function __construct( )
+	function __construct( )
 	{
 		//* Doesn't really do anything here.  Just nice to have incase.
+		log_debug("FileCache::__construct()");
 	}
 	
 	/**

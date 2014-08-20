@@ -33,7 +33,7 @@ DEFINE('CFG_DT_SQL_DATE_TIME', 'Y-m-d h:i:s');
 //* 1 = Sent to PHP system logger
 //* 3 = Output goes to a user specified file.
 DEFINE('CFG_LOG_TO', '3');
-DEFINE('CFG_LOG_FILE', 'C:\phplogs\php-errors.log');
+DEFINE('CFG_LOG_FILE', 'C:\\phplogs\\php-errors.log');
 
 //* Define the different levels of logging
 DEFINE('CFG_LOG_ALL', 0);
@@ -51,6 +51,4 @@ DEFINE('CFG_LOG_LEVEL', CFG_LOG_ALL);
 //* LANGUAGE SETTINGS
 //*********************************************************
 DEFINE('CFG_LANG_DEFAULT', 'en');
-
-
 ?>
