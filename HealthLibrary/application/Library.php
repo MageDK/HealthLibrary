@@ -7,7 +7,7 @@
  * up the content from the Cache if the content is recent and has not expired.  If the content is not 
  * available in the cache or has expired, then a request will be made from the Krames StayWell servers.
  * 
- * See the file in examples/test-library.php for a brief exapmple of using the Library object.
+ * See the file in /applications/test-cases/test-library.php for a brief exapmple of using the Library object.
  * 
  * @package HealthLibrary
  * @author Emil Diego
