@@ -14,8 +14,8 @@ log_debug("******************** Starting test-library.php ********************")
 log_debug("* PHP Version: " . phpversion());
 log_debug("*******************************************************************");
 
-$sCacheLoation = "C:\\inetpub\\wwwroot\\test-php\\HealthLibrary\\cache\\";
-//$sCacheLoation = "c:\\phplogs\\";
+$sCacheLoation = "C:\\inetpub\\wwwroot\\test-php\\HealthLibrary\\cache";
+//$sCacheLoation = "c:\\phplogs";
 
 
 writelineBR("Creating new Library object");
@@ -25,7 +25,6 @@ $xLibrary = new Library($sCacheLoation);
 $sContentId 		= "P02730";
 $sContentTypeId 	= "90";
 
-writelineBR("Getting Content: $sContentId, $sContentTypeId");
 $xResponse = $xLibrary->getContent($sContentId, $sContentTypeId);
 if ($xResponse !== FALSE)
 {
