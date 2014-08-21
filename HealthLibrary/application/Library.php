@@ -4,9 +4,10 @@
  * all the requests for content from the library.
  * 
  * The Library will use a file cache to store the responses from the library.  The Library will serve 
- * up the content from the Cache if the content is recent and has not expired.  By default the cache expiration is set 
- * to 30 minutes (1800 seconds).
+ * up the content from the Cache if the content is recent and has not expired.  If the content is not 
+ * available in the cache or has expired, then a request will be made from the Krames StayWell servers.
  * 
+ * See the file in examples/test-library.php for a brief exapmple of using the Library object.
  * 
  * @package HealthLibrary
  * @author Emil Diego
@@ -14,7 +15,6 @@
  * emildiego@gmail.com
  * 
  */
-
 class Library
 {
 	/**
@@ -38,7 +38,7 @@ class Library
 	 *
 	 * Create an instance of our Library object.
 	 * 
-	 * @param string sCacheLocation The local folder that will be used to store our cache data.  Defaults to current directory ".".
+	 * @param string $sCacheLocation The local folder that will be used to store our cache data.  Defaults to current directory ".".
 	 */
 	function __construct($sCacheLocation = ".")
 	{
@@ -57,11 +57,13 @@ class Library
 	}
 	
 	/**
-	 * Generate the data id from the content id and content type.  The data id 
-	 * is used to identify the request in the caceh.
+	 * Generate the hash used for the data id from the content id and content type.  The data id 
+	 * is used to identify the request in the file cache.  Uses the ripemd160 hash function.
 	 * 
 	 * @param string $sContentId The content ID
 	 * @param string $sContentTypeId The id of the content type
+	 * 
+	 * @return string Returns the result of the HASH of the content id and content type id.
 	 */
 	private function generateDataId( $sContentId, $sContentTypeId )
 	{
