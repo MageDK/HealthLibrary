@@ -146,7 +146,8 @@ class FileCache
 	}
 	
 	/**
-	 * Check to see if we have exceeded the expirtation.
+	 * Check to see if we have exceeded the expirtation.  If the content has expired
+	 * then the cahce file is deleted from the filesystem.)
 	 *
 	 * @param string $sDataId The unique ID of the data we want to check.
 	 *
