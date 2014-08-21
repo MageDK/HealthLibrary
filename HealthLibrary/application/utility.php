@@ -231,6 +231,13 @@ function writelog($sMsg, $iLogLevel)
 		//* THe message goes to the php system logger
 		error_log( $sTmpMsg , 0);
 	}
+	
+	//* If the option to display the log message to the screen is true
+	//* then we output this to the HTML output.
+	if (CFG_LOG_SCREEN)
+	{
+		writelineBR( $sTmpMsg );
+	}
 
 } 
 
