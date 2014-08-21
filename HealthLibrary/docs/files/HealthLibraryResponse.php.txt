@@ -80,26 +80,33 @@ class HealthLibraryResponse
 	 *
 	 * @param string sXmlContent A String containing the XML content returned by the request.
 	 */
-	public function __construct( $sXmlContent = null )
+	function __construct( $sXmlContent = null )
 	{
+		log_debug("HealthLibraryResponse::__construct()");
+		
 		//* Make sure we have some contents in the string
 		if ($sXmlContent == null || $sXmlContent == "")
 		{
-			$this->m_bValidXML = false;
+			log_debug("XML content is null or empty");
+			$this->m_bValidXML = FALSE;
 		}
 		else
 		{
 			//* We have some data in the string.  lets try and convert it.
+			log_debug("We have some data.  Let's try and convert it");
 			$this->m_xXmlDoc = simplexml_load_string($sXmlContent);
 			if ($this->m_xXmlDoc === FALSE)
 			{
-				//* we were unable to parse the XML
-				$this->m_bValidXML = true;
+				//* we were not able to load the XML content
+				log_debug("Unable to parse the XML");
+				log_debug($sXmlContent);
+				
+				$this->m_bValidXML = FALSE;
 			}
 			else
 			{
-				//( We did parse it successfully.
-				$this->m_bValidXML = false;
+				//* We were able to load the XML.
+				$this->m_bValidXML = TRUE;
 			}
 		}
 	}
@@ -113,6 +120,9 @@ class HealthLibraryResponse
 	 */
 	public function isValidXMLDocument()
 	{
+		log_debug("HealthLibraryResponse::isValidXMLDocument()");
+		log_debug("is Valid: " .  htmlentities(var_export($this->m_bValidXML, true)));
+		
 		return $this->m_bValidXML;
 	}
 	
@@ -141,6 +151,8 @@ class HealthLibraryResponse
 	 */
 	public function getBody()
 	{
+		log_debug("HealthLibraryResponse::getBody()");
+		
 		//* Let's check to see if we have a valid XML Document
 		if (!$this->isValidXMLDocument())
 			return FALSE;

@@ -136,10 +136,10 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1834053817"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-364987360"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-1834053817" class="accordion-body collapse in">
+            <div id="namespace-364987360" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                     
@@ -169,8 +169,9 @@
                     <p><em>The main object for interacting with the Krames StayWell library.  This object will handle
 all the requests for content from the library.</em></p>
                     <p>The Library will use a file cache to store the responses from the library.  The Library will serve
-up the content from the Cache if the content is recent and has not expired.  By default the cache expiration is set
-to 30 minutes (1800 seconds).</p>
+up the content from the Cache if the content is recent and has not expired.  If the content is not
+available in the cache or has expired, then a request will be made from the Krames StayWell servers.</p>
+<p>See the file in /applications/test-cases/test-library.php for a brief exapmple of using the Library object.</p>
 
                     <section id="summary">
                         <h2>Summary</h2>
@@ -215,6 +216,7 @@ to 30 minutes (1800 seconds).</p>
                             <section class="span4">
                                                                     <a href="../classes/Library.html#property_m_xCache" class="">$m_xCache</a><br />
                                                                     <a href="../classes/Library.html#property_m_xLibraryRequest" class="">$m_xLibraryRequest</a><br />
+                                                                    <a href="../classes/Library.html#property_m_xLibraryResponse" class="">$m_xLibraryResponse</a><br />
                                                             </section>
                             <section class="span4">
                                 <em>N/A</em>
@@ -320,6 +322,30 @@ emildiego@gmail.com</p>
         </aside>
     </div>
 
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_m_xLibraryResponse" name="property_m_xLibraryResponse" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$m_xLibraryResponse</h3>
+                <pre class="signature">$m_xLibraryResponse : object</pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                object
+                &mdash; m_xLibraryResponse An object of type HealthLibraryResponse used to store the response received by the Krames Health Library.                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
                             
                                     <a id="methods" name="methods"></a>
             <div class="row-fluid">
@@ -333,16 +359,16 @@ emildiego@gmail.com</p>
             <article class="method">
                 <h3 class="public ">__construct()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">__construct( <span class="argument">$sCacheLocation</span>)</pre>
+                <pre class="signature" style="margin-right: 54px;">__construct(string <span class="argument">$sCacheLocation</span>)</pre>
                 <p><em>Default Constructor</em></p>
                 <p>Create an instance of our Library object.</p>
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$sCacheLocation </td>
-                                <td></td>
+                                <td><p>The local folder that will be used to store our cache data.  Defaults to current directory ".".</p></td>
                             </tr>
                                             </table>
                 
@@ -366,7 +392,7 @@ emildiego@gmail.com</p>
             <article class="method">
                 <h3 class="public ">getContent()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getContent(string <span class="argument">$sContentId</span>, string <span class="argument">$sContentTypeId</span>) : string</pre>
+                <pre class="signature" style="margin-right: 54px;">getContent(string <span class="argument">$sContentId</span>, string <span class="argument">$sContentTypeId</span>) : \HealthLibraryResponse</pre>
                 <p><em>Retreive the content for the specified content id and content type.</em></p>
                 
 
@@ -386,8 +412,8 @@ emildiego@gmail.com</p>
                 
                 
                                     <h4>Returns</h4>
-                    string
-                                            &mdash; <p>Returns a string containing the response data.  NULL if an error was encountered.</p>
+                    <a href="../classes/HealthLibraryResponse.html">\HealthLibraryResponse</a>
+                                            &mdash; <p>Returns a HealthLibraryResponse object containing the response data.  FALSE if an error was encountered.</p>
                                                 </article>
         </div>
         <aside class="span4 detailsbar">
@@ -407,9 +433,9 @@ emildiego@gmail.com</p>
             <article class="method">
                 <h3 class="private ">generateDataId()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">generateDataId(string <span class="argument">$sContentId</span>, string <span class="argument">$sContentTypeId</span>)</pre>
-                <p><em>Generate the data id from the content id and content type.  The data id
-is used to identify the request in the caceh.</em></p>
+                <pre class="signature" style="margin-right: 54px;">generateDataId(string <span class="argument">$sContentId</span>, string <span class="argument">$sContentTypeId</span>) : string</pre>
+                <p><em>Generate the hash used for the data id from the content id and content type.  The data id
+is used to identify the request in the file cache.  Uses the ripemd160 hash function.</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -427,7 +453,10 @@ is used to identify the request in the caceh.</em></p>
                                             </table>
                 
                 
-                            </article>
+                                    <h4>Returns</h4>
+                    string
+                                            &mdash; <p>Returns the result of the HASH of the content id and content type id.</p>
+                                                </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -491,7 +520,7 @@ is used to identify the request in the caceh.</em></p>
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
                     on 
 Warning: date_default_timezone_get(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /usr/lib/php/pear/phpDocumentor/vendor/twig/twig/lib/Twig/Extension/Core.php on line 89
-July 29th, 2014 at 17:42.
+August 21st, 2014 at 19:03.
                 </section>
             </section>
         </section>

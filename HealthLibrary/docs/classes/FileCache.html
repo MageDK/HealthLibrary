@@ -136,10 +136,10 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-158080205"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-510953931"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-158080205" class="accordion-body collapse in">
+            <div id="namespace-510953931" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                     
@@ -167,11 +167,10 @@
 
                     <h1><small>\</small>FileCache</h1>
                     <p><em>This object performs the function of caching data requests to the local file system.</em></p>
-                    <p>The can be used to reduce the
-number of requests that need to be made to retrieve remote content.  The cache uses a data id to
-identify each cache entry.  It is up to the caller to generate unique data id's for each
-item that we want to cache.  The easiest method for this is using a Hash function to combine
-the identifying information of the request into a single unique value.</p>
+                    <p>The can be used to reduce the number of requests that need to be made to retrieve remote content.
+The cache uses a data id to identify each cache entry.  It is up to the caller to generate
+unique data id's for each item that we want to cache.  The easiest method for this is using a
+Hash function to combine the identifying information of the request into a single unique value.</p>
 <p>The FileCache object must have access to read/write to a single directory.  The directory
 will be where the cache data is kept.</p>
 <p>The FileCache will also allow the ability to clear all the cache contents.</p>
@@ -312,13 +311,13 @@ emildiego@gmail.com</p>
             <a id="property_m_iExpireInSeconds" name="property_m_iExpireInSeconds" class="anchor"></a>
             <article class="property">
                 <h3 class="private ">$m_iExpireInSeconds</h3>
-                <pre class="signature">$m_iExpireInSeconds : string</pre>
+                <pre class="signature">$m_iExpireInSeconds : integer</pre>
                 <p><em></em></p>
                 
 
                                 <h4>Type</h4>
-                string
-                &mdash; The number of secids befire an entry in the cache is expired.  Default is 15v minutes.                            </article>
+                integer
+                &mdash; The number of secids befire an entry in the cache is expired.  Default value is 900 (15 minutes).                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -403,7 +402,8 @@ emildiego@gmail.com</p>
                 <h3 class="public ">setFileCacheDirectory()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">setFileCacheDirectory(string <span class="argument">$sDirectory</span>) : boolean</pre>
-                <p><em>Set the directory to use to store our cache data</em></p>
+                <p><em>Set the directory to use to store our cache data.  This function will check to make sure
+the directory exists and is writable.</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -418,7 +418,7 @@ emildiego@gmail.com</p>
                 
                                     <h4>Returns</h4>
                     boolean
-                                            &mdash; <p>Returns TRUE if the specified directory was successfully set.  Will check to make sure the directory exists and is writable.</p>
+                                            &mdash; <p>Returns TRUE if the specified directory was successfully set.</p>
                                                 </article>
         </div>
         <aside class="span4 detailsbar">
@@ -466,22 +466,25 @@ emildiego@gmail.com</p>
             <article class="method">
                 <h3 class="public ">doesExistInCache()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">doesExistInCache( <span class="argument">$sDataId</span>)</pre>
+                <pre class="signature" style="margin-right: 54px;">doesExistInCache(string <span class="argument">$sDataId</span>) : boolean</pre>
                 <p><em>Checks the file cahce for the data represented by the unique id.  If there is a entry in the cache for
-it then return True, else return False.</em></p>
+it then return TRUE, else return FALSE.</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$sDataId </td>
-                                <td></td>
+                                <td><p>The Unique ID of the data we want to check the cache for.</p></td>
                             </tr>
                                             </table>
                 
                 
-                            </article>
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>If there is a entry in the cache for it then return TRUE, else return FALSE.</p>
+                                                </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -500,22 +503,26 @@ it then return True, else return False.</em></p>
             <article class="method">
                 <h3 class="public ">isValid()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">isValid( <span class="argument">$sDataId</span>)</pre>
+                <pre class="signature" style="margin-right: 54px;">isValid(string <span class="argument">$sDataId</span>) : boolean</pre>
                 <p><em>Checks to see if the cache data requested is valid or not.  By valid I mean that it exists
-in the cache and is not expired.</em></p>
+in the cache and is not expired.  If the content has expired then the file is deleted from
+the cache directory.</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$sDataId </td>
-                                <td></td>
+                                <td><p>The Unique ID of the data we want to check the cache for.</p></td>
                             </tr>
                                             </table>
                 
                 
-                            </article>
+                                    <h4>Returns</h4>
+                    boolean
+                                            &mdash; <p>Returns TRUE if the content is in the cace and has not expired.  FALSE if the content is not in the cance or expired.</p>
+                                                </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -534,21 +541,21 @@ in the cache and is not expired.</em></p>
             <article class="method">
                 <h3 class="public ">writeDataToCache()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">writeDataToCache( <span class="argument">$sDataId</span>,  <span class="argument">$sData</span>) : boolean</pre>
-                <p><em>Write some data to te cache</em></p>
+                <pre class="signature" style="margin-right: 54px;">writeDataToCache(string <span class="argument">$sDataId</span>, string <span class="argument">$sData</span>) : boolean</pre>
+                <p><em>Write the data to the file cache folder.</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$sDataId </td>
-                                <td></td>
+                                <td><p>The Unique ID of the data we want to cache.</p></td>
                             </tr>
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$sData </td>
-                                <td></td>
+                                <td><p>The data we want to cache.</p></td>
                             </tr>
                                             </table>
                 
@@ -575,16 +582,16 @@ in the cache and is not expired.</em></p>
             <article class="method">
                 <h3 class="public ">readDataFromCache()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">readDataFromCache( <span class="argument">$sDataId</span>) : mixed</pre>
-                <p><em>Read some data from the cahce.</em></p>
+                <pre class="signature" style="margin-right: 54px;">readDataFromCache(string <span class="argument">$sDataId</span>) : mixed</pre>
+                <p><em>Read the data specified by the specified sDataId from the file cache.</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$sDataId </td>
-                                <td></td>
+                                <td><p>The Unique ID of the data we want to retrieve from the cache.</p></td>
                             </tr>
                                             </table>
                 
@@ -611,16 +618,16 @@ in the cache and is not expired.</em></p>
             <article class="method">
                 <h3 class="protected ">createCacheFileName()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">createCacheFileName( <span class="argument">$sDataId</span>)</pre>
+                <pre class="signature" style="margin-right: 54px;">createCacheFileName(string <span class="argument">$sDataId</span>)</pre>
                 <p><em>A utility method to generate the filename for the item we want to retreive from the cache.</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td>string</td>
                                 <td>$sDataId </td>
-                                <td></td>
+                                <td><p>The Unique ID of the data we want to check the cache for.</p></td>
                             </tr>
                                             </table>
                 
@@ -645,7 +652,8 @@ in the cache and is not expired.</em></p>
                 <h3 class="protected ">hasExpired()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
                 <pre class="signature" style="margin-right: 54px;">hasExpired(string <span class="argument">$sDataId</span>) : boolean</pre>
-                <p><em>Check to see if we have exceeded the expirtation.</em></p>
+                <p><em>Check to see if we have exceeded the expirtation.  If the content has expired
+then the cahce file is deleted from the filesystem.</em></p>
                 
 
                                     <h4>Parameters</h4>
@@ -725,7 +733,7 @@ in the cache and is not expired.</em></p>
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
                     on 
 Warning: date_default_timezone_get(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /usr/lib/php/pear/phpDocumentor/vendor/twig/twig/lib/Twig/Extension/Core.php on line 89
-July 29th, 2014 at 17:42.
+August 21st, 2014 at 19:03.
                 </section>
             </section>
         </section>

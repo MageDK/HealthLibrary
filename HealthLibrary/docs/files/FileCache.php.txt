@@ -1,11 +1,10 @@
 <?php
 /**
  * This object performs the function of caching data requests to the local file system.
- * The can be used to reduce the 
- * number of requests that need to be made to retrieve remote content.  The cache uses a data id to 
- * identify each cache entry.  It is up to the caller to generate unique data id's for each 
- * item that we want to cache.  The easiest method for this is using a Hash function to combine
- * the identifying information of the request into a single unique value.
+ * The can be used to reduce the number of requests that need to be made to retrieve remote content.  
+ * The cache uses a data id to identify each cache entry.  It is up to the caller to generate 
+ * unique data id's for each item that we want to cache.  The easiest method for this is using a 
+ * Hash function to combine the identifying information of the request into a single unique value.
  * 
  * The FileCache object must have access to read/write to a single directory.  The directory
  * will be where the cache data is kept.
@@ -27,9 +26,9 @@ class FileCache
 	private $m_sCacheDirectory	= ".";
 	
 	/**
-	 * @var string The number of secids befire an entry in the cache is expired.  Default is 15v minutes.
+	 * @var integer The number of secids befire an entry in the cache is expired.  Default value is 900 (15 minutes).
 	 */
-	private $m_iExpireInSeconds = "900";
+	private $m_iExpireInSeconds = 900;
 	
 	/**
 	 * Default Constructor
@@ -37,9 +36,10 @@ class FileCache
 	 * Create an instance of the FileCache object.
 	 * 
 	 */
-	public function __construct( )
+	function __construct( )
 	{
 		//* Doesn't really do anything here.  Just nice to have incase.
+		log_debug("FileCache::__construct()");
 	}
 	
 	/**
@@ -53,11 +53,12 @@ class FileCache
 	}
 	
 	/**
-	 * Set the directory to use to store our cache data
+	 * Set the directory to use to store our cache data.  This function will check to make sure 
+	 * the directory exists and is writable.
 	 * 
 	 * @param string $sDirectory The path to the directory we want to use to store our cache.
 	 * 
-	 * @return boolean Returns TRUE if the specified directory was successfully set.  Will check to make sure the directory exists and is writable.
+	 * @return boolean Returns TRUE if the specified directory was successfully set.  
 	 */
 	public function setFileCacheDirectory( $sDirectory )
 	{
@@ -88,7 +89,7 @@ class FileCache
 	/**
 	 * A utility method to generate the filename for the item we want to retreive from the cache.
 	 * 
-	 * @param string sDataId The Unique ID of the data we want to check the cache for.
+	 * @param string $sDataId The Unique ID of the data we want to check the cache for.
 	 */
 	protected function createCacheFileName( $sDataId )
 	{
@@ -124,16 +125,18 @@ class FileCache
 	
 	/**
 	 * Checks the file cahce for the data represented by the unique id.  If there is a entry in the cache for
-	 * it then return True, else return False.
+	 * it then return TRUE, else return FALSE.
 	 * 
-	 * @param string sDataId The Unique ID of the data we want to check the cache for.
+	 * @param string $sDataId The Unique ID of the data we want to check the cache for.
+	 * 
+	 * @return boolean If there is a entry in the cache for it then return TRUE, else return FALSE.
 	 */
 	public function doesExistInCache( $sDataId )
 	{
 		//* make sure we have a non null data id.
 		if ($sDataId == null || $sDataId == "")
 		{
-			return false;
+			return FALSE;
 		}
 		
 		//* Check to see if we have a file with the cached data in it.
@@ -145,7 +148,8 @@ class FileCache
 	}
 	
 	/**
-	 * Check to see if we have exceeded the expirtation.
+	 * Check to see if we have exceeded the expirtation.  If the content has expired
+	 * then the cahce file is deleted from the filesystem.
 	 *
 	 * @param string $sDataId The unique ID of the data we want to check.
 	 *
@@ -199,9 +203,12 @@ class FileCache
 	
 	/**
 	 * Checks to see if the cache data requested is valid or not.  By valid I mean that it exists
-	 * in the cache and is not expired.
+	 * in the cache and is not expired.  If the content has expired then the file is deleted from 
+	 * the cache directory.
 	 * 
-	 * @param string sDataId The Unique ID of the data we want to check the cache for.
+	 * @param string $sDataId The Unique ID of the data we want to check the cache for.
+	 * 
+	 * @return boolean Returns TRUE if the content is in the cace and has not expired.  FALSE if the content is not in the cance or expired.
 	 */
 	public function isValid( $sDataId )
 	{
@@ -219,10 +226,10 @@ class FileCache
 	}
 	
 	/**
-	 * Write some data to te cache
+	 * Write the data to the file cache folder.
 	 * 
-	 * @param string sDataId The Unique ID of the data we want to cache.
-	 * @param string sData The data we want to cache.
+	 * @param string $sDataId The Unique ID of the data we want to cache.
+	 * @param string $sData The data we want to cache.
 	 * 
 	 * @return boolean Returns TRUE if the data was successfully written to the cache, FALSE if it wasn't.
 	 */
@@ -244,9 +251,10 @@ class FileCache
 	}
 	
 	/**
-	 * Read some data from the cahce.
+	 * Read the data specified by the specified sDataId from the file cache.
 	 * 
-	 * @param string sDataId The Unique ID of the data we want to retrieve from the cache.
+	 * 
+	 * @param string $sDataId The Unique ID of the data we want to retrieve from the cache.
 	 * 
 	 * @return mixed The data we want to retreive, or FALSE if it doesn't exist in the cache or is expired.
 	 */
