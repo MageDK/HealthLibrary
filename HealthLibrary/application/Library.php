@@ -94,53 +94,54 @@ class Library
 		
 		//* First thing we need to do is check to see if this data is already in the cache.
 		$sDataId = $this->generateDataId($sContentId, $sContentTypeId);
-		$bInCache = $this->m_xCache->doesExistInCache($sDataId);
-		if ($bInCache)
+		$bContentInCache = $this->m_xCache->doesExistInCache($sDataId);
+		$bContentIsValid = $this->m_xCache->isValid( $sDataId );
+		if ($bContentInCache && $bContentIsValid)
 		{
-			log_debug("Content is in Cache");
+			log_debug("Content is in Cache and has not expired");
 			
-			//* The response is in the cahce.  We need to check to see if its expired
-			$bSuccess = $this->m_xCache->isValid( $sDataId );
-			if ($bSuccess)
-			{
-				//* The response has not expired.  Let's return it.
-				//* TODO: Load the response from the filesystem and create our response object.
-				return $this->m_xCache->readDataFromCache($sDataId);
-			}
-		}
-		
-		log_debug("Content is not in cache");
-		
-		//* The data is either not in te cache or expired.
-		$bSuccess = $this->m_xLibraryRequest->addParameter("ContentTypeId", $sContentTypeId);
-		$bSuccess = $this->m_xLibraryRequest->addParameter("ContentId", $sContentId);
-		
-		//* Get the response from the library.
-		$sResponse = $this->m_xLibraryRequest->getResponse();
-		
-		log_debug("Response Code: " . $this->m_xLibraryRequest->getHTTPResponseCode());
-		
-		//* Check the response code and if it was "200" then we got a valid response
-		if ($this->m_xLibraryRequest->getHTTPResponseCode() != "200")
-		{
-			//* We encountered an error
-			return  FALSE;
+			//* The response has not expired.  Let's return it.
+			$sResponse = $this->m_xCache->readDataFromCache($sDataId);
 		}
 		else
 		{
-			//* There was no error.  Everything was returned successfully.
-			//* now we create a n instance of our response
-			$this->m_xLibraryResponse = new HealthLibraryResponse( $sResponse );
-			if ($this->m_xLibraryResponse == null)
-				return FALSE;
+			//* The content is not in the cache or has expired.  Let's get it from the library.
+			log_debug("Content is not in cache");
 			
-			//* The XML content is valid and was loaded successfully. Lets parse out the 
-			//* values we need.
-			$this->m_xLibraryResponse->parseContent();
+			//* The data is either not in te cache or expired.
+			$bSuccess = $this->m_xLibraryRequest->addParameter("ContentTypeId", $sContentTypeId);
+			$bSuccess = $this->m_xLibraryRequest->addParameter("ContentId", $sContentId);
 			
-			//* return the response object
-			return $this->m_xLibraryResponse;
+			//* Get the response from the library.
+			$sResponse = $this->m_xLibraryRequest->getResponse();
+			log_debug("Response Code: " . $this->m_xLibraryRequest->getHTTPResponseCode());
+			
+			//* Check the response code and if it was "200" then we got a valid response
+			if ($this->m_xLibraryRequest->getHTTPResponseCode() != "200")
+			{
+				//* We encountered an error
+				return  FALSE;
+			}
+
+			//* We successfully retrieved the content.  Let's write the content to the cache.
+			$this->m_xCache->writeDataToCache($sDataId, $sResponse);
 		}
+		
+		//* We have gotten this far.  The $sResponse varaible should be storing the 
+		//* content.  Either it was pulled from the cache or it was retreived from the 
+		//* Krames Knowledge Base
+
+		//* now we create a n instance of our response
+		$this->m_xLibraryResponse = new HealthLibraryResponse( $sResponse );
+		if ($this->m_xLibraryResponse == null)
+			return FALSE;
+			
+		//* The XML content is valid and was loaded successfully. Lets parse out the 
+		//* values we need.
+		$this->m_xLibraryResponse->parseContent();
+			
+		//* return the response object
+		return $this->m_xLibraryResponse;
 	}
 }
 
